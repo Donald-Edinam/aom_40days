@@ -1,4 +1,4 @@
- let reading = [
+   let reading = [
    "When you fast, do not look somber as the hypocrites do, for they disfigure their faces to show others they are fasting. Truly I tell you, they have received their reward in full. But when you fast, put oil on your head and wash your face, so that it will not be obvious to others that you are fasting, but only to your Father, who is unseen; and your Father, who sees what is done in secret, will reward you.",
    "Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time.",
    "Is not this the kind of fasting I have chosen: to loose the chains of injustice and untie the cords of the yoke, to set the oppressed free and break every yoke? Is it not to share your food with the hungry and to provide the poor wanderer with shelter— when you see the naked, to clothe them, and not to turn away from your own flesh and blood?",
@@ -19,7 +19,10 @@
    "But seek first his kingdom and his righteousness, and all these things will be given to you as well.",
    "Be joyful in hope, patient in affliction, faithful in prayer.",
    "For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.",
-   
+   // Day 21
+   "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+   "We wait in hope for the Lord; he is our help and our shield. In him our hearts rejoice, for we trust in his holy name. May your unfailing love be with us, Lord, even as we put our hope in you.",
+   ""
    ]
  
  
@@ -171,9 +174,9 @@
         day: 20
       },
       {
-        book: 'Philippians ',
-        chapter: 4,
-        verse: ' 1 - 5',
+        book: 'Isaiah ',
+        chapter: 40,
+        verse: ' 31',
         reading: reading[20],
         day: 21
       },
