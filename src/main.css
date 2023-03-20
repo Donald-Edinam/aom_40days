@@ -1,7 +1,7 @@
 /*
  * Globals
  */
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Poppins:wght@300&display=swap');
 
 /* Custom default button */
 .btn-secondary,
@@ -19,6 +19,56 @@
 body {
   /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+  background: url("/img/img14.jpg");
+  background-size: 240%;
+  color: #f3f4f3;
+  animation-name: bgmove;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+@keyframes bgmove{
+  0%{
+    background-position: 30% 35%;
+    background-size: 200%;
+  }
+  
+  20%{
+    background-position: 30% 35%;
+    background-size: 304%;
+  }
+  
+  20.001%{
+    background-position: 60% 85%;
+    background-size: 500%;
+  }
+  40%{
+     background-position: 49% 81%;
+    background-size: 500%;
+  }
+  
+  40.002%{
+     background-position: 80% 45%;
+     background-size: 500%;
+  }
+  60%{
+     background-position: 94% 35%;
+     background-size: 500%;
+  }
+  
+  60.005%{
+     background-position: 20% 25%;
+     background-size: 500%;
+  }
+  80%{
+     background-position: 60% 85%;
+     background-size: 500%;
+  }
+  100%{
+    background-position: 100% 100%;
+  }
 }
 
 .cover-container {
@@ -51,11 +101,23 @@ body {
 .nav-masthead .active {
   color: #000;
   border-bottom-color: #000;
+} cc
+footer p{
+  
 }
 
-footer{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.card-blur{
+  background: transparent;
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+/*  font-family: 'Poppins', sans-serif; */
+  font-weight: 400; 
+}
+
+.card-blur .card-body .lead{
+  font-size: 17px;
+}
+
+.text{
+  color: #ccc;
 }
