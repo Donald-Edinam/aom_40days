@@ -19,8 +19,8 @@
 body {
   /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
-  background: #333, url("/img/img14.jpg");
-  background-size: 240%;
+  background: #333, url("https://unsplash.com/photos/PT-gOmCUlCY");
+  background-size: 140%;
   color: #f3f4f3;
   animation-name: bgmove;
   animation-duration: 60s;
@@ -32,39 +32,39 @@ body {
 @keyframes bgmove{
   0%{
     background-position: 30% 35%;
-    background-size: 200%;
+    background-size: 100%;
   }
   
   20%{
     background-position: 30% 35%;
-    background-size: 304%;
+    background-size: 204%;
   }
   
   20.001%{
     background-position: 60% 85%;
-    background-size: 500%;
+    background-size: 300%;
   }
   40%{
      background-position: 49% 81%;
-    background-size: 500%;
+    background-size: 230%;
   }
   
   40.002%{
      background-position: 80% 45%;
-     background-size: 500%;
+     background-size: 150%;
   }
   60%{
      background-position: 94% 35%;
-     background-size: 500%;
+     background-size: 220%;
   }
   
   60.005%{
      background-position: 20% 25%;
-     background-size: 500%;
+     background-size: 280%;
   }
   80%{
      background-position: 60% 85%;
-     background-size: 500%;
+     background-size: 190%;
   }
   100%{
     background-position: 100% 100%;
