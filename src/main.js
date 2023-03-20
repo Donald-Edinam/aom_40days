@@ -344,7 +344,7 @@
     function getDailyVerse() {
       const today = new Date();
       const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-      const verseIndex = dayOfYear % verses.length - 14;
+      const verseIndex = dayOfYear % verses.length - 13;
       const verse = verses[verseIndex];
 
       // Display the daily verse on the website
