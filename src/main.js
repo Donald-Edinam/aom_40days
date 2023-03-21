@@ -344,8 +344,11 @@
     function getDailyVerse() {
       const today = new Date();
       const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-      const verseIndex = dayOfYear % verses.length - 13;
-      const verse = verses[verseIndex];
+    //  const verseIndex = dayOfYear % verses.length;
+    const countdown = calculateCountdown();
+    console.log(countdown); // Output: 11
+    let diffInDays = 39 - countdown;
+      const verse = verses[diffInDays];
 
       // Display the daily verse on the website
      // const verseContainer = document.getElementById('verse-container');
@@ -363,7 +366,7 @@
         <hr>
         <p class="text-muted">${today.toDateString()}</p>
       `; */
-      cardTitle.textContent = verse.book + verse.chapter + " :" + verse.verse;;
+      cardTitle.textContent = verse.book + verse.chapter + " :" + verse.verse;
        cardText.textContent = verse.reading;
         memoryVerse.textContent = verse.book + verse.chapter + " :" + verse.verse;
       dateNow.textContent = today.toDateString();
@@ -373,4 +376,19 @@
     // Call the getDailyVerse function on page load
     getDailyVerse();
     
-    console.log("JS is running ")
+    function calculateCountdown() {
+  // Set end date to April 2, 2023
+  const endDate = new Date('2023-04-02');
+  
+  // Get the current date
+  const currentDate = new Date();
+  
+  // Calculate the difference in milliseconds
+  const differenceInMs = endDate.getTime() - currentDate.getTime();
+  
+  // Calculate the difference in days
+  const differenceInDays = Math.ceil(differenceInMs / (1000 * 60 * 60 * 24));
+  
+  // Return the difference in days
+  return differenceInDays;
+}
